@@ -18,6 +18,7 @@
 
 BEGIN_MESSAGE_MAP(CDemoApp, CWinApp)
 	ON_COMMAND(ID_APP_ABOUT, &CDemoApp::OnAppAbout)
+	ON_COMMAND(ID_LOAD_IMG, &CDemoApp::OnLoadImg)
 END_MESSAGE_MAP()
 
 
@@ -101,12 +102,6 @@ int CDemoApp::ExitInstance()
 	return CWinApp::ExitInstance();
 }
 
-// CDemoApp 消息处理程序
-
-
-
-
-
 // 用于运行对话框的应用程序命令
 void CDemoApp::OnAppAbout()
 {
@@ -114,7 +109,9 @@ void CDemoApp::OnAppAbout()
 	aboutDlg.DoModal();
 }
 
-// CDemoApp 消息处理程序
-
-
-
+void CDemoApp::OnLoadImg()
+{
+	cv::Mat mat = cv::imread("c:/opencv/OpenCV_Logo.png");
+	cv::imshow("opencv demo", mat);
+	cv::waitKey(0);
+}
