@@ -22,13 +22,12 @@ public:
 
 // 重写
 	protected:
-	virtual BOOL PreCreateWindow(CREATESTRUCT& cs);
+	virtual BOOL PreCreateWindow(CREATESTRUCT& cs) override;
 
 // 实现
 public:
 	virtual ~CChildView();
 
-	// 生成的消息映射函数
 protected:
 	afx_msg void OnPaint();
 	DECLARE_MESSAGE_MAP()

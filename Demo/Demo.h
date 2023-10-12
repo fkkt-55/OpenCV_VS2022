@@ -10,10 +10,6 @@
 #include "resource.h"       // 主符号
 #include "CAboutDlg.h"
 
-// CDemoApp:
-// 有关此类的实现，请参阅 Demo.cpp
-//
-
 class CDemoApp : public CWinApp
 {
 public:
