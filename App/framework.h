@@ -35,5 +35,10 @@
 #endif
 #endif
 
-// opencv core
-#include <opencv2/opencv.hpp>
+#pragma comment(lib,"CoreLib.lib")
+
+#ifdef _DEBUG
+#pragma comment(lib,"opencv_world480d.lib")
+#else
+#pragma comment(lib,"opencv_world480.lib")
+#endif // _DEBUG

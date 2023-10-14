@@ -4,7 +4,7 @@
 
 #include "pch.h"
 #include "framework.h"
-#include "Demo.h"
+#include "App.h"
 #include "ChildView.h"
 
 #ifdef _DEBUG
@@ -81,6 +81,7 @@ void CChildView::OnPaint()
 
 		// 绘制位图
 		cimg.BitBlt(dc, 0, 0);
+		//CoreStringConvert::CString2String(L"Hello");
 	}
 }
 

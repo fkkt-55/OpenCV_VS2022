@@ -1,14 +1,13 @@
 ﻿//{{NO_DEPENDENCIES}}
 // Microsoft Visual C++ 生成的包含文件。
-// 供 Demo.rc 使用
+// 供 App.rc 使用
 //
 #define IDD_ABOUTBOX                    100
 #define IDP_OLE_INIT_FAILED             100
 #define IDR_MAINFRAME                   128
-#define IDR_DemoTYPE                    130
+#define IDR_AppTYPE                    130
 #define IDB_BITMAP_OPENCV_LOGO          311
 #define IDC_OPENCV_LOGO                 1000
-#define ID_32771                        32771
 #define ID_LOAD_IMG                     32772
 
 // Next default values for new objects

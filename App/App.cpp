@@ -1,12 +1,12 @@
 ﻿
-// Demo.cpp: 定义应用程序的类行为。
+// App.cpp: 定义应用程序的类行为。
 //
 
 #include "pch.h"
 #include "framework.h"
 #include "afxwinappex.h"
 #include "afxdialogex.h"
-#include "Demo.h"
+#include "App.h"
 #include "MainFrm.h"
 
 #ifdef _DEBUG
@@ -14,33 +14,33 @@
 #endif
 
 
-// CDemoApp
+// CAppApp
 
-BEGIN_MESSAGE_MAP(CDemoApp, CWinApp)
-	ON_COMMAND(ID_APP_ABOUT, &CDemoApp::OnAppAbout)
-	ON_COMMAND(ID_LOAD_IMG, &CDemoApp::OnLoadImg)
+BEGIN_MESSAGE_MAP(CAppApp, CWinApp)
+	ON_COMMAND(ID_APP_ABOUT, &CAppApp::OnAppAbout)
+	ON_COMMAND(ID_LOAD_IMG, &CAppApp::OnLoadImg)
 END_MESSAGE_MAP()
 
 
-// CDemoApp 构造
+// CAppApp 构造
 
-CDemoApp::CDemoApp() noexcept
+CAppApp::CAppApp() noexcept
 {
 
 	// TODO: 将以下应用程序 ID 字符串替换为唯一的 ID 字符串；建议的字符串格式
 	//为 CompanyName.ProductName.SubProduct.VersionInformation
-	SetAppID(_T("Fkkt.OpenCV.Demo"));
+	SetAppID(_T("Fkkt.OpenCV.App"));
 
 	// TODO:  在此处添加构造代码，
 	// 将所有重要的初始化放置在 InitInstance 中
 }
 
-// 唯一的 CDemoApp 对象
-CDemoApp theApp;
+// 唯一的 CAppApp 对象
+CAppApp theApp;
 
 
-// CDemoApp 初始化
-BOOL CDemoApp::InitInstance()
+// CAppApp 初始化
+BOOL CAppApp::InitInstance()
 {
 	// 如果一个运行在 Windows XP 上的应用程序清单指定要
 	// 使用 ComCtl32.dll 版本 6 或更高版本来启用可视化方式，
@@ -94,7 +94,7 @@ BOOL CDemoApp::InitInstance()
 	return TRUE;
 }
 
-int CDemoApp::ExitInstance()
+int CAppApp::ExitInstance()
 {
 	//TODO: 处理可能已添加的附加资源
 	AfxOleTerm(FALSE);
@@ -103,13 +103,13 @@ int CDemoApp::ExitInstance()
 }
 
 // 用于运行对话框的应用程序命令
-void CDemoApp::OnAppAbout()
+void CAppApp::OnAppAbout()
 {
 	CAboutDlg aboutDlg;
 	aboutDlg.DoModal();
 }
 
-void CDemoApp::OnLoadImg()
+void CAppApp::OnLoadImg()
 {
 	cv::Mat mat = cv::imread("c:/opencv/OpenCV_Logo.png");
 	cv::imshow("opencv demo", mat);

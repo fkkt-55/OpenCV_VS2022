@@ -1,5 +1,5 @@
 ﻿
-// Demo.h: Demo 应用程序的主头文件
+// App.h: App 应用程序的主头文件
 //
 #pragma once
 
@@ -10,10 +10,10 @@
 #include "resource.h"       // 主符号
 #include "CAboutDlg.h"
 
-class CDemoApp : public CWinApp
+class CAppApp : public CWinApp
 {
 public:
-	CDemoApp() noexcept;
+	CAppApp() noexcept;
 
 	// 重写
 public:
@@ -28,4 +28,4 @@ public:
 	DECLARE_MESSAGE_MAP()
 };
 
-extern CDemoApp theApp;
+extern CAppApp theApp;
