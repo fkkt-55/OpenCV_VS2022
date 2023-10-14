@@ -35,10 +35,11 @@
 #endif
 #endif
 
-#pragma comment(lib,"CoreLib.lib")
-
 #ifdef _DEBUG
 #pragma comment(lib,"opencv_world480d.lib")
 #else
 #pragma comment(lib,"opencv_world480.lib")
 #endif // _DEBUG
+
+#pragma comment(lib,"CoreLib.lib")
+#pragma comment(lib,"CvMFCUtilityLib.lib")

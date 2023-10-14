@@ -21,33 +21,21 @@
     <ClInclude Include="pch.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="CoreMacros.h">
+    <ClInclude Include="targetver.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="CoreStringConvert.h">
+    <ClInclude Include="cv_mfc_utility.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="core.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="CoreFileUtility.h">
+    <ClInclude Include="face_dector.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="CoreLib.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="pch.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="CoreMacros.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="CoreStringConvert.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="CoreFileUtility.cpp">
+    <ClCompile Include="face_dector.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

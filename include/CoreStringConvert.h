@@ -1,7 +1,7 @@
 #pragma once
 
-#include <atlstr.h>
 #include "CoreMacros.h"
+#include <afx.h>
 
 class CoreStringConvert
 {
@@ -10,5 +10,6 @@ public:
 
 public:
 	static String CString2String(const CString& cstring);
+	static CString String2CString(const String& string);
 };
 

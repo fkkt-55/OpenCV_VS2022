@@ -2,13 +2,11 @@
 #ifndef __KT_CORE_MARCOS__
 #define __KT_CORE_MARCOS__
 
-#include <windows.h>
-#include <tchar.h>
-
 #include <string>
 
-typedef std::string String;
+#include "framework.h"
 
+#if defined(__AFXWIN_H__)
 #ifdef _DEBUG
 #define MessageD(x) MessageBox(_T(x), L"DEBUG")
 #else
@@ -16,9 +14,16 @@ typedef std::string String;
 #endif // _DEBUG
 #define MessageI(x) MessageBox(_T(x), L"Ã· æ")
 #define MessageE(x) MessageBox(_T(x), L"¥ÌŒÛ")
+#elif defined(_WINUSER_)
+#ifdef _DEBUG
+#define MessageD(x) (x)
+#else
+#define MessageD(x) (x)
+#endif // _DEBUG
+#define MessageI(x) (x)
+#define MessageE(x) (x)
+#endif // defined(__AFXWIN_H__)
 
-class CoreMacros
-{
-};
+typedef std::string String;
 
 #endif // !__KT_CORE_MARCOS__

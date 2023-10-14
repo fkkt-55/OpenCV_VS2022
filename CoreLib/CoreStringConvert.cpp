@@ -10,3 +10,14 @@ String CoreStringConvert::CString2String(const CString& cstring)
 	}
 	return String();
 }
+
+CString CoreStringConvert::String2CString(const String& string)
+{
+	if (!string.empty())
+	{
+		CString cstring;
+		cstring.Format(_T("%s"), string);
+		return cstring;
+	}
+	return CString();
+}

@@ -13,8 +13,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{7928fab3-d650-4e87-a5fd-a6a5f71b9ec0}</ProjectGuid>
-    <RootNamespace>CoreLib</RootNamespace>
+    <ProjectGuid>{28a815e3-0364-44c2-afb4-d3db53cc331e}</ProjectGuid>
+    <RootNamespace>CvMFCUtilityLib</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -47,13 +47,14 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <OutDir>$(SolutionDir)\lib\</OutDir>
     <IntDir>$(ProjectDir)$(Platform)\$(Configuration)\</IntDir>
-    <IncludePath>C:\opencv\include;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\opencv\x64\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\opencv\include;$(SolutionDir)\include\;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\opencv\x64\lib;$(SolutionDir)\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <OutDir>$(SolutionDir)\lib\</OutDir>
-    <IncludePath>C:\opencv\include;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\opencv\x64\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\opencv\include;$(SolutionDir)\include\;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\opencv\x64\lib;$(SolutionDir)\lib;$(LibraryPath)</LibraryPath>
+    <IntDir>$(ProjectDir)$(Platform)\$(Configuration)\</IntDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
@@ -63,8 +64,8 @@
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
-      <LanguageStandard>Default</LanguageStandard>
-      <LanguageStandard_C>Default</LanguageStandard_C>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
     </ClCompile>
     <Link>
       <SubSystem>
@@ -100,18 +101,14 @@
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="core.h" />
-    <ClInclude Include="CoreFileUtility.h" />
-    <ClInclude Include="CoreMacros.h" />
-    <ClInclude Include="CoreStringConvert.h" />
+    <ClInclude Include="cv_mfc_utility.h" />
+    <ClInclude Include="face_dector.h" />
     <ClInclude Include="framework.h" />
     <ClInclude Include="pch.h" />
+    <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="CoreFileUtility.cpp" />
-    <ClCompile Include="CoreLib.cpp" />
-    <ClCompile Include="CoreMacros.cpp" />
-    <ClCompile Include="CoreStringConvert.cpp" />
+    <ClCompile Include="face_dector.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>

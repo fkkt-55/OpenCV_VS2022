@@ -5,10 +5,16 @@ VisualStudioVersion = 17.7.34202.233
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "App", "App\App.vcxproj", "{0078EE3E-0DB0-42E9-9099-A69031DCD3CD}"
 	ProjectSection(ProjectDependencies) = postProject
+		{28A815E3-0364-44C2-AFB4-D3DB53CC331E} = {28A815E3-0364-44C2-AFB4-D3DB53CC331E}
 		{7928FAB3-D650-4E87-A5FD-A6A5F71B9EC0} = {7928FAB3-D650-4E87-A5FD-A6A5F71B9EC0}
 	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CoreLib", "CoreLib\CoreLib.vcxproj", "{7928FAB3-D650-4E87-A5FD-A6A5F71B9EC0}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CvMFCUtilityLib", "CvMFCUtilityLib\CvMFCUtilityLib.vcxproj", "{28A815E3-0364-44C2-AFB4-D3DB53CC331E}"
+	ProjectSection(ProjectDependencies) = postProject
+		{7928FAB3-D650-4E87-A5FD-A6A5F71B9EC0} = {7928FAB3-D650-4E87-A5FD-A6A5F71B9EC0}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -24,6 +30,10 @@ Global
 		{7928FAB3-D650-4E87-A5FD-A6A5F71B9EC0}.Debug|x64.Build.0 = Debug|x64
 		{7928FAB3-D650-4E87-A5FD-A6A5F71B9EC0}.Release|x64.ActiveCfg = Release|x64
 		{7928FAB3-D650-4E87-A5FD-A6A5F71B9EC0}.Release|x64.Build.0 = Release|x64
+		{28A815E3-0364-44C2-AFB4-D3DB53CC331E}.Debug|x64.ActiveCfg = Debug|x64
+		{28A815E3-0364-44C2-AFB4-D3DB53CC331E}.Debug|x64.Build.0 = Debug|x64
+		{28A815E3-0364-44C2-AFB4-D3DB53CC331E}.Release|x64.ActiveCfg = Release|x64
+		{28A815E3-0364-44C2-AFB4-D3DB53CC331E}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
