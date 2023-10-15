@@ -24,6 +24,12 @@
 #define MessageE(x) (x)
 #endif // defined(__AFXWIN_H__)
 
+#ifdef _DEBUG
+#define OPENCV_LIB "opencv_world481d.lib"
+#else
+#define OPENCV_LIB "opencv_world481.lib"
+#endif // _DEBUG
+
 typedef std::string String;
 
 #endif // !__KT_CORE_MARCOS__

@@ -47,7 +47,7 @@ void CChildView::OnPaint()
 {
 	CPaintDC dc(this); // 用于绘制的设备上下文
 	String imagePath("D:/Sample/images/合影.jpg");
-	String faceCascadeFile = "c:/opencv/etc/haarcascades/haarcascade_frontalface_alt.xml";
+	String faceCascadeFile = "c:/tools/opencv/build/etc/haarcascades/haarcascade_frontalface_alt.xml";
 	FaceDector faceDector = FaceDector::getInstance(faceCascadeFile);
 	faceDector.detect(imagePath, dc);
 

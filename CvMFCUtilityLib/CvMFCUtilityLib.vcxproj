@@ -47,13 +47,13 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <OutDir>$(SolutionDir)\lib\</OutDir>
     <IntDir>$(ProjectDir)$(Platform)\$(Configuration)\</IntDir>
-    <IncludePath>C:\opencv\include;$(SolutionDir)\include\;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\opencv\x64\lib;$(SolutionDir)\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\tools\opencv\build\include;$(SolutionDir)\include\;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\tools\opencv\build\x64\vc16\lib;$(SolutionDir)\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <OutDir>$(SolutionDir)\lib\</OutDir>
-    <IncludePath>C:\opencv\include;$(SolutionDir)\include\;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\opencv\x64\lib;$(SolutionDir)\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\tools\opencv\build\include;$(SolutionDir)\include\;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\tools\opencv\build\x64\vc16\lib;$(SolutionDir)\lib;$(LibraryPath)</LibraryPath>
     <IntDir>$(ProjectDir)$(Platform)\$(Configuration)\</IntDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">

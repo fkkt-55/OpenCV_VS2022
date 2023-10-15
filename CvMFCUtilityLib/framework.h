@@ -36,10 +36,9 @@
 #endif
 
 //opencv库
-#ifdef _DEBUG
-#pragma comment(lib,"opencv_world480d.lib")
-#else
-#pragma comment(lib,"opencv_world480.lib")
-#endif // _DEBUG
+#include <CoreMacros.h>
+#pragma warning(disable:4083)
+#pragma comment(lib,OPENCV_LIB)
+#pragma warning(default:4083)
 
 #pragma comment(lib,"CoreLib.lib")
