@@ -30,12 +30,18 @@
     <ClInclude Include="face_dector.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="video_view.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="pch.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="face_dector.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="video_view.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

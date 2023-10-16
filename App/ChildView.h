@@ -4,7 +4,8 @@
 
 
 #pragma once
-
+#include <memory>
+#include <video_view.h>
 
 // CChildView 窗口
 
@@ -29,7 +30,10 @@ public:
 	virtual ~CChildView();
 
 protected:
-	afx_msg void OnPaint();
 	DECLARE_MESSAGE_MAP()
-};
+	afx_msg void OnPaint();
 
+private:
+	CStatic m_static;
+	std::unique_ptr<VideoView> view;
+};
